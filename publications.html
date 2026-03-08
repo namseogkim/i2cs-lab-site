@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I<sup>2</sup>CS Lab — Publications</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'DM Sans',sans-serif;background:#0b1929;color:#e8f0f5;}
+
+  /* ── NAV ── */
+  nav{background:rgba(11,25,41,.97);border-bottom:1px solid rgba(0,191,165,.15);display:flex;align-items:center;justify-content:space-between;padding:0 2rem;height:56px;position:sticky;top:0;z-index:100;}
+  .nav-logo{font-size:.72rem;letter-spacing:.18em;color:#00bfa5;text-transform:uppercase;font-weight:600;white-space:nowrap;}
+  .nav-links{display:flex;gap:1.6rem;list-style:none;}
+  .nav-links a{color:#8fa3b1;text-decoration:none;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;transition:color .2s;padding:.3rem 0;border-bottom:2px solid transparent;}
+  .nav-links a:hover{color:#00bfa5;}
+  .nav-links a.active{color:#00bfa5;border-bottom-color:#00bfa5;}
+  @media(max-width:600px){.nav-links{gap:.9rem;}.nav-links a{font-size:.72rem;}}
+
+  /* ── PAGE ── */
+  .page{padding:2.5rem;}
+  .sec-tag{font-size:.68rem;letter-spacing:.2em;color:#00bfa5;text-transform:uppercase;margin-bottom:.6rem;display:flex;align-items:center;gap:.6rem;}
+  .sec-tag::before{content:'';display:inline-block;width:22px;height:1px;background:#00bfa5;}
+  h2{font-family:'DM Serif Display',serif;font-size:2rem;color:#fff;margin-bottom:.6rem;}
+  .desc{color:#8fa3b1;font-size:.9rem;margin-bottom:2rem;max-width:600px;line-height:1.75;}
+
+  /* ── YEAR GROUP ── */
+  .year-group{margin-bottom:2.2rem;}
+  .year-heading{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:#00bfa5;font-weight:700;margin-bottom:.8rem;display:flex;align-items:center;gap:.7rem;}
+  .year-heading::after{content:'';flex:1;height:1px;background:rgba(0,191,165,.15);}
+
+  /* ── PUB ITEM ── */
+  .list{display:flex;flex-direction:column;gap:.75rem;}
+  .item{background:#112233;border:1px solid rgba(0,191,165,.13);border-radius:6px;padding:1.1rem 1.4rem;display:flex;gap:1.2rem;align-items:flex-start;transition:border-color .2s;}
+  .item:hover{border-color:rgba(0,191,165,.38);}
+  .idx{font-size:.7rem;color:rgba(0,191,165,.5);min-width:22px;padding-top:.25rem;font-weight:700;text-align:right;}
+  .body{flex:1;}
+  .body h4{font-size:.91rem;color:#fff;font-weight:500;margin-bottom:.3rem;line-height:1.5;}
+  .authors{font-size:.78rem;color:#00bfa5;margin-bottom:.15rem;}
+  .venue{font-size:.78rem;color:#8fa3b1;line-height:1.4;}
+  .cite{font-size:.65rem;padding:.15rem .45rem;border-radius:2px;margin-left:.5rem;vertical-align:middle;background:rgba(255,200,0,.1);color:#ffd54f;border:1px solid rgba(255,200,0,.2);}
+
+  /* badges */
+  .badge{font-size:.6rem;padding:.15rem .45rem;border-radius:2px;margin-left:.4rem;letter-spacing:.04em;vertical-align:middle;}
+  .ieee{background:rgba(0,100,255,.15);color:#6fa3ff;border:1px solid rgba(0,100,255,.22);}
+  .jour{background:rgba(0,191,165,.1);color:#00bfa5;border:1px solid rgba(0,191,165,.2);}
+  .conf{background:rgba(255,150,50,.1);color:#ffb74d;border:1px solid rgba(255,150,50,.2);}
+
+  /* scholar link */
+  .more{display:inline-flex;align-items:center;gap:.4rem;margin-top:2rem;color:#00bfa5;text-decoration:none;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;border-bottom:1px solid rgba(0,191,165,.3);padding-bottom:2px;transition:border-color .2s;}
+  .more:hover{border-color:#00bfa5;}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">I<sup>2</sup>CS Lab · CBNU</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="publications.html" class="active">Publications</a></li>
+    <li><a href="members.html">Members</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+  <div class="sec-tag">Publications</div>
+  <h2>Journal &amp; Conference Papers</h2>
+  <p class="desc">Peer-reviewed publications in IEEE journals, international conferences, and open-access venues. Sorted by date (newest first).</p>
+
+  <!-- ── 2025 ── -->
+  <div class="year-group">
+    <div class="year-heading">2025</div>
+    <div class="list">
+
+      <div class="item">
+        <div class="idx">1</div>
+        <div class="body">
+          <h4>A Physics-Based Compact Model for Multibit SR-RRAM Driven by Alkali Ion Migration and Interfacial Barrier Modulation <span class="badge ieee">IEEE TED</span></h4>
+          <div class="authors">J.S. Beom, N.-S. Kim</div>
+          <div class="venue">IEEE Transactions on Electron Devices, 2025</div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="idx">2</div>
+        <div class="body">
+          <h4>CMOS Impedance Sensor with 128×128 Microelectrode Arrays for Measuring Surface Coverage of Microparticles <span class="badge conf">IEEE SENSORS</span></h4>
+          <div class="authors">H. Shin, D. Kang, J. Kim, N.-S. Kim</div>
+          <div class="venue">2025 IEEE SENSORS, pp. 1–4</div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="idx">3</div>
+        <div class="body">
+          <h4>Resonator Width Optimization for Enhanced Performance and Bonding Reliability in Wideband RF MEMS Filter <span class="badge jour">Micromachines</span></h4>
+          <div class="authors">G. Jeon, M. Jeong, S. Lee, Y. Jo, N.-S. Kim</div>
+          <div class="venue">Micromachines, vol. 16, no. 8, p. 878, 2025</div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="idx">4</div>
+        <div class="body">
+          <h4>A Low-Power CMOS Receiver with Quadrature Bandpass Continuous-Time Delta–Sigma Analog-to-Digital Converter for IoT Applications <span class="badge jour">Sensors</span></h4>
+          <div class="authors">N.-S. Kim</div>
+          <div class="venue">Sensors, vol. 25, no. 6, p. 1748, 2025</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── 2024 ── -->
+  <div class="year-group">
+    <div class="year-heading">2024</div>
+    <div class="list">
+
+      <div class="item">
+        <div class="idx">5</div>
+        <div class="body">
+          <h4>An ADPLL-Based GFSK Modulator with Two-Point Modulation for IoT Applications <span class="badge jour">Sensors</span>
+            <span class="cite">Cited: 2</span></h4>
+          <div class="authors">N.-S. Kim</div>
+          <div class="venue">Sensors, vol. 24, no. 16, p. 5255, 2024</div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="idx">6</div>
+        <div class="body">
+          <h4>A 2.4 GHz Wide-Range CMOS Current-Mode Class-D PA with HD2 Suppression for Internet of Things Applications <span class="badge jour">Sensors</span>
+            <span class="cite">Cited: 3</span></h4>
+          <div class="authors">N.-S. Kim</div>
+          <div class="venue">Sensors, vol. 24, no. 5, p. 1616, 2024</div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="idx">7</div>
+        <div class="body">
+          <h4>A Compact Model for Interface-Type Self-Rectifying Resistive Memory with Experiment Verification <span class="badge ieee">IEEE Access</span>
+            <span class="cite">Cited: 12</span></h4>
+          <div class="authors">J.W. Kim, J.S. Beom, H.S. Lee, N.-S. Kim</div>
+          <div class="venue">IEEE Access, vol. 12, pp. 5081–5091, 2024</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── 2022 ── -->
+  <div class="year-group">
+    <div class="year-heading">2022</div>
+    <div class="list">
+
+      <div class="item">
+        <div class="idx">8</div>
+        <div class="body">
+          <h4>A 10-Bit, 600 MS/s Multi-Mode Direct-Sampling DAC-Based Transmitter <span class="badge ieee">IEEE Access</span></h4>
+          <div class="authors">N.-S. Kim</div>
+          <div class="venue">IEEE Access, vol. 10, pp. 125696–125706, 2022</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── 2021 ── -->
+  <div class="year-group">
+    <div class="year-heading">2021</div>
+    <div class="list">
+
+      <div class="item">
+        <div class="idx">9</div>
+        <div class="body">
+          <h4>A Spurious and Oscillator Pulling Free CMOS Quadrature LO-Generator for Cellular NB-IoT <span class="badge ieee">IEEE TVLSI</span>
+            <span class="cite">Cited: 4</span></h4>
+          <div class="authors">J. Choi, N.-S. Kim</div>
+          <div class="venue">IEEE Transactions on Very Large Scale Integration (VLSI) Systems, vol. 29, no. 12, 2021</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <a href="https://scholar.google.com/citations?user=OiNjLCcAAAAJ&hl=en" target="_blank" class="more">View full list on Google Scholar →</a>
+</div>
+
+</body>
+</html>

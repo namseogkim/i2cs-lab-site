@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I<sup>2</sup>CS Lab — Research</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'DM Sans',sans-serif;background:#0b1929;color:#e8f0f5;}
+
+  nav{background:rgba(11,25,41,.97);border-bottom:1px solid rgba(0,191,165,.15);display:flex;align-items:center;justify-content:space-between;padding:0 2rem;height:56px;position:sticky;top:0;z-index:100;}
+  .nav-logo{font-size:.72rem;letter-spacing:.18em;color:#00bfa5;text-transform:uppercase;font-weight:600;white-space:nowrap;}
+  .nav-links{display:flex;gap:1.6rem;list-style:none;}
+  .nav-links a{color:#8fa3b1;text-decoration:none;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;transition:color .2s;padding:.3rem 0;border-bottom:2px solid transparent;}
+  .nav-links a:hover{color:#00bfa5;}
+  .nav-links a.active{color:#00bfa5;border-bottom-color:#00bfa5;}
+  @media(max-width:600px){.nav-links{gap:.9rem;} .nav-links a{font-size:.72rem;}}
+
+  .page{padding:2.5rem;}
+  .sec-tag{font-size:.68rem;letter-spacing:.2em;color:#00bfa5;text-transform:uppercase;margin-bottom:.6rem;display:flex;align-items:center;gap:.6rem;}
+  .sec-tag::before{content:'';display:inline-block;width:22px;height:1px;background:#00bfa5;}
+  h2{font-family:'DM Serif Display',serif;font-size:2rem;color:#fff;margin-bottom:.6rem;}
+  
+  .desc{color:#8fa3b1;font-size:.9rem;margin-bottom:2rem;max-width:650px;line-height:1.75;}
+  .desc strong{color:#e8f0f5;font-weight:500;}
+
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+  @media(max-width:900px){.grid{grid-template-columns:1fr;}}
+  
+  /* ── UPDATED CARD WITH IMAGE CONTAINER ── */
+  .card{background:#112233;border:1px solid rgba(0,191,165,.15);border-radius:8px;position:relative;overflow:hidden;transition:transform .25s,border-color .25s;display:flex;flex-direction:column;}
+  .card:hover{transform:translateY(-4px);border-color:rgba(0,191,165,.4);}
+  .card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#00bfa5,#00897b);transform:scaleX(0);transform-origin:left;transition:transform .3s;z-index:2;}
+  .card:hover::before{transform:scaleX(1);}
+  
+  /* object-fit set to 'contain' with padding so wide images are not cropped */
+  .card-img{width:100%;height:220px;object-fit:contain;padding:10px;border-bottom:1px solid rgba(0,191,165,.15);background:#08131e;}
+  .card-body{padding:1.6rem;flex-grow:1;display:flex;flex-direction:column;}
+  
+  .num{font-size:2.2rem;font-weight:700;color:rgba(0,191,165,.1);line-height:1;margin-bottom:.8rem;position:absolute;top:1rem;right:1rem;z-index:1;}
+  .card h3{font-size:.96rem;color:#fff;font-weight:600;margin-bottom:.7rem;line-height:1.4;}
+  .card p{font-size:.84rem;color:#8fa3b1;line-height:1.7;flex-grow:1;}
+  .tags{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:1.2rem;}
+  .t{font-size:.63rem;letter-spacing:.05em;padding:.2rem .55rem;border-radius:2px;background:rgba(0,191,165,.08);color:#00bfa5;border:1px solid rgba(0,191,165,.2);}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">I<sup>2</sup>CS Lab · CBNU</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="research.html" class="active">Research</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="members.html">Members</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+  <div class="sec-tag">Hardware First</div>
+  <h2>Integrated Circuit Design &amp; Systems</h2>
+  <p class="desc">Our group fundamentally focuses on <strong>Physical Hardware & IC Design</strong>. We create self-contained microsystems by designing novel microstructures and low-power analog/mixed-signal circuits. System-level embedded software is strictly implemented to interface, control, and validate our proprietary custom-designed silicon chips.</p>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="EIS.png" alt="Biosensor Architecture" class="card-img">
+      <div class="card-body">
+        <div class="num">01</div>
+        <h3>Biosensor Circuits &amp; Systems</h3>
+        <p>Ultra-low-power CMOS biosensor hardware design for point-of-care diagnostics. We design physical chips such as CMOS impedance sensors integrated with 128x128 microelectrode arrays, EIS-based DDS circuits, and microfluidic-CMOS platforms.</p>
+        <div class="tags">
+          <span class="t">EIS</span><span class="t">CMOS Bio-SoC</span><span class="t">128x128 MEA</span><span class="t">Microfluidics</span><span class="t">POCT</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="AI.png" alt="AI Accelerator Architecture" class="card-img">
+      <div class="card-body">
+        <div class="num">02</div>
+        <h3>AI Hardware Accelerators</h3>
+        <p>Hardware-efficient neuromorphic computing designs. We build physical AI chips, including Spiking Neural Network (SNN) MAC accelerators utilizing emerging RRAM crossbar arrays and customized CMOS Leaky Integrate-and-Fire (LIF) neuron circuits.</p>
+        <div class="tags">
+          <span class="t">Neuromorphic</span><span class="t">SNN MAC</span><span class="t">ReRAM</span><span class="t">CMOS LIF</span><span class="t">PIM</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="RF.png" alt="RF IC Architecture" class="card-img">
+      <div class="card-body">
+        <div class="num">03</div>
+        <h3>Wireline / Wireless Comm. ICs</h3>
+        <p>Transistor-level RF and analog/mixed-signal IC design employing gm/ID methodologies for high-performance communication. Research spans wideband RF MEMS filters, quadrature LO generators, and multi-GHz PLL architectures in advanced CMOS nodes.</p>
+        <div class="tags">
+          <span class="t">RF MEMS</span><span class="t">gm/ID Methodology</span><span class="t">LO Generator</span><span class="t">PLL</span><span class="t">Analog/Mixed-Signal</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

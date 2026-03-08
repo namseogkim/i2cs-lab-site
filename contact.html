@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I<sup>2</sup>CS Lab — Contact</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'DM Sans',sans-serif;background:#0b1929;color:#e8f0f5;}
+
+  nav{background:rgba(11,25,41,.97);border-bottom:1px solid rgba(0,191,165,.15);display:flex;align-items:center;justify-content:space-between;padding:0 2rem;height:56px;position:sticky;top:0;z-index:100;}
+  .nav-logo{font-size:.72rem;letter-spacing:.18em;color:#00bfa5;text-transform:uppercase;font-weight:600;white-space:nowrap;}
+  .nav-links{display:flex;gap:1.6rem;list-style:none;}
+  .nav-links a{color:#8fa3b1;text-decoration:none;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;transition:color .2s;padding:.3rem 0;border-bottom:2px solid transparent;}
+  .nav-links a:hover{color:#00bfa5;}
+  .nav-links a.active{color:#00bfa5;border-bottom-color:#00bfa5;}
+  @media(max-width:600px){.nav-links{gap:.9rem;} .nav-links a{font-size:.72rem;}}
+
+  .page{padding:2.5rem;}
+  .sec-tag{font-size:.68rem;letter-spacing:.2em;color:#00bfa5;text-transform:uppercase;margin-bottom:.6rem;display:flex;align-items:center;gap:.6rem;}
+  .sec-tag::before{content:'';display:inline-block;width:22px;height:1px;background:#00bfa5;}
+  h2{font-family:'DM Serif Display',serif;font-size:2rem;color:#fff;margin-bottom:.6rem;}
+  .desc{color:#8fa3b1;font-size:.9rem;margin-bottom:2rem;max-width:520px;line-height:1.75;}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
+  @media(max-width:640px){.grid{grid-template-columns:1fr;}}
+  .box{background:#112233;border:1px solid rgba(0,191,165,.16);border-radius:8px;padding:1.8rem;}
+  .box h3{font-size:.9rem;color:#fff;font-weight:600;margin-bottom:1.3rem;letter-spacing:.02em;}
+  .row{display:flex;gap:.9rem;align-items:flex-start;margin-bottom:1.2rem;}
+  .ico{width:34px;height:34px;min-width:34px;background:rgba(0,191,165,.08);border:1px solid rgba(0,191,165,.18);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:1rem;}
+  .lbl{font-size:.67rem;color:#8fa3b1;text-transform:uppercase;letter-spacing:.09em;margin-bottom:.2rem;}
+  .val{font-size:.88rem;color:#e8f0f5;line-height:1.55;}
+  .val a{color:#00bfa5;text-decoration:none;}
+  .val a:hover{text-decoration:underline;}
+  .map-box{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.8rem;text-align:center;min-height:220px;}
+  .map-pin{font-size:2.8rem;}
+  .map-loc{font-size:.72rem;color:#00bfa5;letter-spacing:.12em;text-transform:uppercase;}
+  .map-addr{font-size:.85rem;color:#8fa3b1;line-height:1.65;}
+  .map-btn{display:inline-block;margin-top:.7rem;padding:.5rem 1.2rem;border:2px solid rgba(0,191,165,.3);border-radius:4px;color:#00bfa5;text-decoration:none;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;transition:all .2s;}
+  .map-btn:hover{border-color:#00bfa5;background:rgba(0,191,165,.06);}
+
+  .notice-block{background:rgba(0,191,165,.06);border:1px solid rgba(0,191,165,.22);border-left:4px solid #00bfa5;border-radius:0 6px 6px 0;padding:1.4rem 1.6rem;margin-top:2rem;}
+  .notice-block .notice-title{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:#00bfa5;font-weight:700;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem;}
+  .notice-block p{font-size:.85rem;color:#8fa3b1;line-height:1.75;margin-bottom:.8rem;}
+  .notice-block p:last-child{margin-bottom:0;}
+  .notice-block strong{color:#e8f0f5;font-weight:600;}
+  .notice-block em{color:#00bfa5;font-style:normal;}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">I<sup>2</sup>CS Lab · CBNU</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="members.html">Members</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+  <div class="sec-tag">Contact</div>
+  <h2>Get in Touch</h2>
+  <p class="desc">Interested in joining the lab or exploring research collaboration? We welcome motivated students and researchers.</p>
+
+  <div class="grid">
+    <div class="box">
+      <h3>Lab Information</h3>
+
+      <div class="row">
+        <div class="ico">📍</div>
+        <div>
+          <div class="lbl">Address</div>
+          <div class="val"><a href="https://inform.chungbuk.ac.kr/en" target="_blank" style="color:#00bfa5;text-decoration:none;">School of Information &amp; Communication Engineering</a><br><a href="https://ece.cbnu.ac.kr/eng" target="_blank" style="color:#00bfa5;text-decoration:none;">College of Electrical and Computer Engineering</a><br><a href="https://www.cbnu.ac.kr/english/index.do" target="_blank" style="color:#00bfa5;text-decoration:none;">Chungbuk National University</a><br>Cheongju, Chungbuk, Republic of Korea</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="ico">👤</div>
+        <div>
+          <div class="lbl">Principal Investigator</div>
+          <div class="val">Nam-Seog Kim<br>Full Professor</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="ico">🔗</div>
+        <div>
+          <div class="lbl">Lab Website</div>
+          <div class="val">
+            <a href="https://sites.google.com/view/namseog/home" target="_blank">sites.google.com/view/namseog ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="ico">📚</div>
+        <div>
+          <div class="lbl">Google Scholar</div>
+          <div class="val">
+            <a href="https://scholar.google.com/citations?user=OiNjLCcAAAAJ&hl=en" target="_blank">View Full Publication List ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box map-box">
+      <div class="map-pin">📌</div>
+      <div class="map-loc">Chungbuk National University</div>
+      <div class="map-addr">Cheongju-si, Chungcheongbuk-do<br>Republic of Korea</div>
+      <a href="https://maps.google.com/?q=Chungbuk+National+University" target="_blank" class="map-btn">Open in Google Maps ↗</a>
+    </div>
+  </div>
+
+  <div class="notice-block">
+    <div class="notice-title">🎯 Prospective Students Notice</div>
+    <p>Our core research is fundamentally based on <strong>Integrated Circuit (IC) Hardware Design</strong>. We do not conduct standalone software, web, or app development research.</p>
+    <p>
+      <strong>IC Hardware:</strong> All research centers on physical silicon chip design — analog/mixed-signal circuits, RF ICs, neuromorphic hardware, and CMOS biosensor chips — fabricated in 14nm–180nm CMOS technology nodes.
+    </p>
+    <p>
+      <strong>Embedded Software for Systems:</strong> Firmware and embedded software are developed strictly as a means to interface with, control, and validate our custom-designed chips. This includes MCU firmware for EIS biosensor readout systems, FPGA-based SNN inference control, and on-chip digital controller programming — all written to test and operate proprietary silicon, not as standalone software products.
+    </p>
+    <p><em>Students with a strong interest in transistor-level IC design, VLSI layout, and analog/mixed-signal circuit theory are strongly encouraged to apply.</em></p>
+  </div>
+</div>
+
+</body>
+</html>
